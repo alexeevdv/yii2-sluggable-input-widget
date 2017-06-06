@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d30b2566e4b1340fe16c433b12498aa",
+    "content-hash": "d0197679211769ee25d3536df15dda2d",
     "packages": [
         {
             "name": "bower-asset/jquery",
@@ -35,49 +35,6 @@
                 "javascript",
                 "jquery",
                 "library"
-            ]
-        },
-        {
-            "name": "bower-asset/jquery-slugify",
-            "version": "1.2.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/madflow/jquery-slugify.git",
-                "reference": "2fe60b0488b730a86924e6ed666c4e07ce539d43"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/madflow/jquery-slugify/zipball/2fe60b0488b730a86924e6ed666c4e07ce539d43",
-                "reference": "2fe60b0488b730a86924e6ed666c4e07ce539d43",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.7",
-                "bower-asset/speakingurl": "~9.0.0"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "dist/slugify.js",
-                "bower-asset-ignore": [
-                    "**/.*",
-                    "node_modules",
-                    "bower_components",
-                    "test",
-                    "libs",
-                    "Gruntfile.js",
-                    "package.json",
-                    "CONTRIBUTING.md",
-                    "slugify.jquery.json"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "Just another another (another) url slug creation plugin for jQuery",
-            "keywords": [
-                "slugify",
-                "slugs",
-                "strings"
             ]
         },
         {
@@ -169,21 +126,21 @@
         },
         {
             "name": "bower-asset/speakingurl",
-            "version": "v9.0.0",
+            "version": "v13.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pid/speakingurl.git",
-                "reference": "013eb82b59b1e5942ca3ccdfaeec2bffca81f7b8"
+                "reference": "31c5b7ce85a69a7721acd090f73235c97890a4a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pid/speakingurl/zipball/013eb82b59b1e5942ca3ccdfaeec2bffca81f7b8",
-                "reference": "013eb82b59b1e5942ca3ccdfaeec2bffca81f7b8",
+                "url": "https://api.github.com/repos/pid/speakingurl/zipball/31c5b7ce85a69a7721acd090f73235c97890a4a9",
+                "reference": "31c5b7ce85a69a7721acd090f73235c97890a4a9",
                 "shasum": ""
             },
             "type": "bower-asset-library",
             "extra": {
-                "bower-asset-main": "speakingurl.min.js",
+                "bower-asset-main": "lib/speakingurl.js",
                 "bower-asset-ignore": [
                     "node_modules"
                 ]

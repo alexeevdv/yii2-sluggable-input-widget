@@ -1,6 +1,6 @@
 <?php
 
-namespace alexeevdv\widgets;
+namespace alexeevdv\widget;
 
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
@@ -37,12 +37,13 @@ class SluggableInputWidget extends InputWidget
      */
     public function run()
     {
-        JquerySlugifyAsset::register($this->getView());
+        SpeakingUrlAsset::register($this->getView());
         $id = $this->getId();
         $selector = $this->getSelector();
         $this->getView()->registerJs("
             $('$selector').change(function (event) {
-                $('#$id').slugify($selector);
+                var value = $(this).val();
+                $('#$id').val(window.getSlug(value));
             });
         ");
 

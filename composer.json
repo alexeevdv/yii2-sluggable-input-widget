@@ -3,7 +3,7 @@
     "type": "yii2-extension",
     "require": {
         "yiisoft/yii2": "^2.0",
-        "bower-asset/jquery-slugify": "^1.2"
+        "bower-asset/speakingurl": "^13.0"
     },
     "require-dev": {
         "yiisoft/yii2-coding-standards": "^2.0"
