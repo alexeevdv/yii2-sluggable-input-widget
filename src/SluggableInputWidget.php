@@ -38,16 +38,19 @@ class SluggableInputWidget extends InputWidget
     public function run()
     {
         SpeakingUrlAsset::register($this->getView());
-        $id = $this->getId();
+
+        $options = ArrayHelper::merge([
+            'id' => $this->getId(),
+            'class' => 'form-control',
+        ], $this->options);
         $selector = $this->getSelector();
         $this->getView()->registerJs("
             $('$selector').change(function (event) {
                 var value = $(this).val();
-                $('#$id').val(window.getSlug(value));
+                $('#{$options['id']}').val(window.getSlug(value));
             });
         ");
 
-        $options = ArrayHelper::merge(['id' => $id], $this->options);
         if ($this->model) {
             return Html::activeTextInput($this->model, $this->attribute, $options);
         } else {
