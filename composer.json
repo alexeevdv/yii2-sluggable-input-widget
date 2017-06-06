@@ -1,0 +1,23 @@
+{
+    "name": "alexeevdv/yii2-sluggable-input-widget",
+    "type": "yii2-extension",
+    "require": {
+        "yiisoft/yii2": "^2.0",
+        "bower-asset/jquery-slugify": "^1.2"
+    },
+    "require-dev": {
+        "yiisoft/yii2-coding-standards": "^2.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry V. Alexeev",
+            "email": "mail@alexeevdv.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "alexeevdv\\widget\\": "src"
+        }
+    }
+}
